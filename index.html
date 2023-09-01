@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Peyso</title>
+  </head>
+  <!-- tuong about + features -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
-</head>
-<h3>oke</h3>
-<!-- linh home -->
+  <!-- tuấn anh client -->
 
-<!-- tuong about + features -->
+  <!-- trường plan + contact -->
 
-<!-- tuấn anh client -->
+  <body>
+    <!-- linh home -->
 
-<!-- trường plan + contact -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="" class="navbar-brand-logo">
+          <img
+            src="https://themesdesign.in/peyso/layout/images/logo-dark.png"
+            alt="logo"
+          />
+        </a>
+        <div class="navbar-items">
+          <div class="navbar-items__item">
+            <a href="#home" onclick="makeActive(this)" class="nav-item active"
+              >Home</a
+            >
+            <a onclick="makeActive(this)" class="nav-item">About</a>
+            <a onclick="makeActive(this)" class="nav-item">Features</a>
+            <a onclick="makeActive(this)" class="nav-item">Clients</a>
+            <a onclick="makeActive(this)" class="nav-item">Plans</a>
+            <a onclick="makeActive(this)" class="nav-item">Contact</a>
+          </div>
+          <div class="navbar-items__signin">
+            <button class="navbar-items__signin__button">Try it Free</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <section class="slider-home">
+        <div class="slider-home__backgound">
+          <img
+            src="https://themesdesign.in/peyso/layout/images/hero-2-overlay.png"
+            alt="background"
+          />
+          <div class="slider-container">
+            <div class="slider-container__image">
+              <img
+                src="https://themesdesign.in/peyso/layout/images/hero-2-img.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-container__infor">
+              <h5>GROW MORE</h5>
+              <h1>Powering Business Everywhere</h1>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium upto doloremque amet dolor sit amet.
+              </p>
+              <button>
+                <a href="">Learn more -></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-<body>
-
-</body>
-
+    <!-- test  -->
+    <div class="" style="height: 10000px"></div>
+  </body>
+  <script>
+    makeActive = function (e) {
+      console.log(e);
+      var item_active = document.querySelector(".nav-item.active");
+      item_active.classList.remove("active");
+      e.classList.add("active");
+    };
+  </script>
 </html>
